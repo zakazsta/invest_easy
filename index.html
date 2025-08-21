@@ -1232,108 +1232,468 @@
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-container {
-                padding: 0 20px;
+                padding: 0 15px;
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                font-size: 20px;
+                letter-spacing: 1px;
             }
 
             .nav-links {
                 display: none;
             }
 
+            .cta-nav {
+                padding: 8px 20px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding-top: 80px;
+                min-height: auto;
+                padding-bottom: 60px;
+            }
+
             .hero-container {
                 grid-template-columns: 1fr;
-                gap: 60px;
-                padding: 0 20px;
+                gap: 40px;
+                padding: 0 15px;
                 text-align: center;
             }
 
+            .hero-title {
+                font-size: clamp(2.5rem, 12vw, 3.5rem);
+                line-height: 1;
+                margin-bottom: 20px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+                margin-bottom: 30px;
+                line-height: 1.4;
+            }
+
             .hero-stats {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                margin-bottom: 30px;
+            }
+
+            .stat-card {
+                padding: 15px;
+            }
+
+            .stat-number {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+
+            .stat-label {
+                font-size: 12px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
                 gap: 15px;
             }
 
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                padding: 16px 30px;
+                font-size: 14px;
+            }
+
+            .financial-dashboard {
+                padding: 25px;
+                border-radius: 20px;
+            }
+
+            .dashboard-title {
+                font-size: 18px;
+            }
+
+            .revenue-amount {
+                font-size: 32px;
+            }
+
+            .revenue-label {
+                font-size: 14px;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .metric-item {
+                padding: 15px;
+            }
+
+            .metric-value {
+                font-size: 18px;
+            }
+
+            .metric-name {
+                font-size: 10px;
+            }
+
+            .floating-card {
+                display: none;
+            }
+
             .section-container {
-                padding: 0 20px;
+                padding: 0 15px;
+            }
+
+            .value-section,
+            .results-section,
+            .calculator-section,
+            .contact-section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: clamp(2rem, 8vw, 2.5rem);
+                margin-bottom: 15px;
+            }
+
+            .section-subtitle {
+                font-size: 16px;
+                margin-bottom: 40px;
             }
 
             .value-grid {
                 grid-template-columns: 1fr;
-                gap: 30px;
+                gap: 25px;
             }
 
             .value-card {
-                padding: 40px 30px;
+                padding: 30px 20px;
+                border-radius: 20px;
+            }
+
+            .value-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            .value-title {
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+
+            .value-description {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            .value-highlight {
+                font-size: 16px;
             }
 
             .results-grid {
                 grid-template-columns: 1fr;
-                gap: 60px;
+                gap: 40px;
+            }
+
+            .studio-showcase {
+                padding: 25px;
+            }
+
+            .studio-image-placeholder {
+                height: 200px;
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .result-item {
+                padding: 20px;
+            }
+
+            .result-value {
+                font-size: 24px;
+            }
+
+            .model-section {
+                padding: 40px 20px;
+                margin: 40px 0;
+                border-radius: 25px;
+            }
+
+            .model-title {
+                font-size: 24px;
+                margin-bottom: 30px;
             }
 
             .model-grid {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 30px;
+            }
+
+            .calculation-box {
+                padding: 25px;
+                border-radius: 15px;
+            }
+
+            .calc-title {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .calc-line {
+                padding: 12px 0;
+                font-size: 14px;
+            }
+
+            .calc-line.final .calc-value {
+                font-size: 18px;
             }
 
             .calculator-grid {
                 grid-template-columns: 1fr;
-                gap: 60px;
+                gap: 40px;
             }
 
-            .form-grid {
-                grid-template-columns: 1fr;
+            .calculator-form {
+                padding: 30px 20px;
+            }
+
+            .calc-form-title {
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+
+            .investment-option {
+                padding: 20px;
+                margin-bottom: 15px;
+            }
+
+            .option-amount {
+                font-size: 16px;
+            }
+
+            .option-share {
+                font-size: 14px;
+            }
+
+            .option-description {
+                font-size: 12px;
+            }
+
+            .calculator-results {
+                padding: 25px;
+                margin-top: 20px;
+            }
+
+            .results-title {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .result-row-value {
+                font-size: 16px;
+            }
+
+            .calculator-visual {
                 gap: 20px;
             }
 
-            .contact-form {
-                padding: 40px 20px;
+            .investment-graphic {
+                padding: 25px;
+            }
+
+            .graphic-icon {
+                font-size: 48px;
+                margin-bottom: 15px;
+            }
+
+            .graphic-title {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .graphic-description {
+                font-size: 14px;
+            }
+
+            .benefits-box {
+                padding: 20px;
+            }
+
+            .benefits-title {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            .benefit-item {
+                margin-bottom: 12px;
+                font-size: 14px;
+            }
+
+            .contact-title {
+                font-size: clamp(2rem, 8vw, 2.5rem);
+                margin-bottom: 15px;
+            }
+
+            .contact-subtitle {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+
+            .urgency-box {
+                padding: 25px 20px;
+                margin-bottom: 40px;
+            }
+
+            .urgency-title {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .urgency-stats {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .urgency-number {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+
+            .urgency-label {
+                font-size: 12px;
+            }
+
+            .telegram-cta {
+                max-width: 100%;
             }
 
             .telegram-box {
-                padding: 40px 20px;
+                padding: 30px 15px;
+                border-radius: 20px;
+            }
+
+            .telegram-icon {
+                font-size: 48px;
+                margin-bottom: 15px;
             }
 
             .telegram-title {
-                font-size: 24px;
+                font-size: 20px;
+                margin-bottom: 15px;
             }
 
             .telegram-description {
-                font-size: 16px;
+                font-size: 14px;
+                margin-bottom: 25px;
+                line-height: 1.5;
             }
 
             .telegram-button {
-                padding: 18px 30px;
+                padding: 15px 25px;
+                font-size: 14px;
+                gap: 8px;
+            }
+
+            .telegram-button-icon {
                 font-size: 16px;
+            }
+
+            .telegram-contact {
+                margin: 25px 0 15px;
             }
 
             .contact-item-main {
                 flex-direction: column;
                 text-align: center;
                 gap: 10px;
+                padding: 15px;
             }
 
             .contact-item-main span {
-                font-size: 32px;
+                font-size: 28px;
             }
 
-            .urgency-stats {
-                grid-template-columns: 1fr;
-                gap: 20px;
+            .contact-name {
+                font-size: 16px;
+            }
+
+            .contact-role {
+                font-size: 12px;
+            }
+
+            .contact-telegram {
+                font-size: 14px;
+            }
+
+            .response-time {
+                padding: 8px 15px;
+                font-size: 12px;
             }
 
             .contact-info {
                 flex-direction: column;
-                gap: 20px;
+                gap: 15px;
+                margin-top: 40px;
             }
 
-            .hero-cta {
-                flex-direction: column;
-                align-items: center;
+            .contact-item {
+                font-size: 14px;
             }
 
-            .btn-primary,
-            .btn-secondary {
-                width: 100%;
-                text-align: center;
+            .telegram-primary {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            .hero-container {
+                padding: 0 10px;
+            }
+
+            .hero-title {
+                font-size: clamp(2rem, 10vw, 2.8rem);
+                margin-bottom: 15px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .financial-dashboard {
+                padding: 20px;
+            }
+
+            .section-container {
+                padding: 0 10px;
+            }
+
+            .value-card {
+                padding: 25px 15px;
+            }
+
+            .model-section {
+                padding: 30px 15px;
+            }
+
+            .telegram-box {
+                padding: 25px 10px;
+            }
+
+            .contact-item-main {
+                padding: 12px;
             }
         }
 
@@ -1370,7 +1730,7 @@
                 <li><a href="#value">Возможности</a></li>
                 <li><a href="#results">Результаты</a></li>
                 <li><a href="#calculator">Расчеты</a></li>
-                <li><a href="#contact">Контакт</a></li>
+                <li><a href="https://t.me/Nastasiya_glush" target="_blank">Telegram</a></li>
             </ul>
             <a href="https://t.me/Nastasiya_glush" target="_blank" class="cta-nav">Связаться в Telegram</a>
         </div>
@@ -1918,7 +2278,7 @@
         }
 
         // Track important interactions
-        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+        document.querySelectorAll('.btn-primary, .btn-secondary, .telegram-button, .telegram-primary').forEach(btn => {
             btn.addEventListener('click', () => {
                 trackEvent('CTA Click', btn.textContent.trim());
             });
