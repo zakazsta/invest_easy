@@ -72,6 +72,9 @@
             z-index: 1000;
             padding: 20px 0;
             transition: all 0.3s ease;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
         }
 
         .nav-container {
@@ -1255,13 +1258,17 @@
             }
 
             .navbar {
-                padding: 10px 0;
+                padding: 15px 0;
+                background: rgba(10, 10, 10, 0.98);
+                backdrop-filter: blur(20px);
+                min-height: 70px;
             }
 
             .nav-container {
                 padding: 0 var(--mobile-padding);
                 flex-wrap: nowrap;
                 justify-content: space-between;
+                align-items: center;
             }
 
             .logo {
@@ -1282,7 +1289,7 @@
 
             /* Hero Section Mobile */
             .hero {
-                padding-top: 60px;
+                padding-top: 120px;
                 min-height: 100vh;
                 padding-bottom: 30px;
             }
@@ -1786,6 +1793,10 @@
         @media (max-width: 375px) {
             :root {
                 --mobile-padding: 8px;
+            }
+
+            .hero {
+                padding-top: 140px;
             }
 
             .hero-title {
